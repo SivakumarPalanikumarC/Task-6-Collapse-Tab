@@ -1,5 +1,5 @@
 var coll = document.getElementsByClassName("aws");
-for (let i = 0; i < coll.length; i++) {
+for (let i of coll) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
